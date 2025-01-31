@@ -1,3 +1,6 @@
-dist/
+target/
 i
 *.po~
+host/
+docker-compose.yml
+node_modules/

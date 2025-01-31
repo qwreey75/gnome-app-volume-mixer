@@ -1,0 +1,5 @@
+@use "../global.scss" as *;
+
+#{$p}-message-remove-shadow .message {
+    box-shadow: none !important;
+}

@@ -1,0 +1,55 @@
+@use "../global.scss" as *;
+
+#{$p}-media {
+    padding: 0px;
+    margin: 0px 0px 0px 0px;
+
+    // Message Card
+    .message {
+        margin: 0px;
+    }
+
+    // Message Content (Texts)
+    .message-content {
+        width: 0px; // Min size, texts will be expended
+        text-overflow: ellipsis;
+    }
+
+    // Header
+    #{$p}-header {
+        margin-bottom: 6px;
+
+        // Header Label
+        #{$p}-header-label {
+            font-weight: bold;
+            font-size: 0.98em;
+            margin-left: 4px;
+        }
+
+        .page-indicators {
+            margin-right: 4px;
+            spacing: 6px;
+            .page-indicator {
+                height: 8px;
+                width: 8px;
+                padding: 0px;
+            }
+        }
+    }
+
+    // Progress Control (Position/Length Text and Slider)
+    #{$p}-progress-control {
+        spacing: 6px;
+        padding: 0px 6px;
+
+        #{$p}-position-label, #{$p}-length-label {
+            font-size: 0.92em;
+        }
+    }
+
+    .message-list-section-list {
+        margin: 0px;
+        padding: 0px;
+        spacing: 0px;
+    }
+}

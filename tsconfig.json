@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "moduleResolution": "Bundler",
+        "outDir": "target/tsc",
+        "target": "ESNext",
+        "module": "ESNext",
+        "removeComments": false,
+        "skipLibCheck": true,
+        "lib": ["ESNext"],
+        "allowArbitraryExtensions": true,
+        "incremental": true,
+        "tsBuildInfoFile": "target/.tsbuildinfo",
+        "useDefineForClassFields": false
+    },
+    "include": ["./src/**/*.ts", "src/types.d.ts", "src/contributors.js", "src/prefPages/menu.ts"],
+}

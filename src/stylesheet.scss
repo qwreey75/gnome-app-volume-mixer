@@ -1,0 +1,13 @@
+@use "./global.scss" as *;
+
+@use "./styles/notification-widget.scss";
+@use "./styles/media-widget.scss";
+@use "./styles/weather-widget.scss";
+@use "./styles/message-compact.scss";
+@use "./styles/message-remove-shadow.scss";
+@use "./styles/debug.scss";
+
+/* input output labels */
+.QSTWEAWKS-input-output-label {
+    width: auto;
+}

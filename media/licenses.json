@@ -1,0 +1,14 @@
+[
+	{
+		"licenseUri": "https://github.com/qwreey/quick-settings-tweaks/blob/master/LICENSE",
+		"name": "quick-settings-tweaks",
+		"author": "qwreey",
+		"url": "https://github.com/qwreey/quick-settings-tweaks"
+	},
+	{
+		"file": "LICENSE-gnome-volume-mixer",
+		"name": "gnome-volume-mixer",
+		"author": "mymindstorm",
+		"url": "https://github.com/mymindstorm/gnome-volume-mixer"
+	}
+]

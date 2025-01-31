@@ -24,3 +24,11 @@ Quick Settings Tweaker is a Gnome 43+ extension which allows you to customize th
 | <p>**Add a Volume Mixer**</p><p>To ajust the volume on a per-app basis</p> | <img src="images/screen_audio-mixer.png" width="250px" alt="Volume Mixer screenshot"> |
 | <p>**Add Media Controls**</p><p>To control your music directly from the Quick Settings Panel, instead of the Notification Center</p> | <img src="images/screen_media-controls.png" width="250px" alt="Media Controls screenshot"> |
 | <p>**Append a Notifications Panel** at the end of the QS Panel</p><p>Congrats! Now you really have a fully featured menu at the top right corner of your screen!</p> | <img src="images/screen_notifications.png" width="250px" alt="Notifications Center screenshot"> |
+
+## Testing
+
+![alt text](images/dev-preview.png)
+
+You can test extension with command `./install.sh dev`. You need tigervnc client and docker in host. Tested in arch linux but it should working on any systemd based platform
+
+Log out to re-build extension, close vnc window or SIGINT on shell to exit dev docker.

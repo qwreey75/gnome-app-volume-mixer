@@ -1,0 +1,5 @@
+@use "../global.scss" as *;
+
+#{$p}-debug-show-layout * {
+    outline: 1px solid red;
+}

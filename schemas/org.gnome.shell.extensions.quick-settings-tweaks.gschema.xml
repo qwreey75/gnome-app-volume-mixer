@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.quick-settings-tweaks" path="/org/gnome/shell/extensions/quick-settings-tweaks/">
+    <!-- #region Debug -->
+    <key name="debug-expose" type="b">
+      <default>false</default>
+    </key>
+    <key name="debug-show-layout-border" type="b">
+      <default>false</default>
+    </key>
+    <key name="debug-log-level" type="i">
+      <default>0</default>
+    </key>
+    <!-- #endregion Debug -->
+
+    <!-- #region Notifications Widget -->
+    <key name="notifications-enabled" type="b">
+      <default>true</default>
+    </key>
+    <key name="notifications-use-native-controls" type="b">
+      <default>false</default>
+    </key>
+    <key name="notifications-compact" type="b">
+      <default>true</default>
+    </key>
+    <key name="notifications-autohide" type="b">
+      <default>true</default>
+    </key>
+    <key name="notifications-max-height" type="i">
+      <default>292</default>
+    </key>
+    <key name="notifications-fade-offset" type="i">
+      <default>46</default>
+    </key>
+    <key name="notifications-remove-shadow" type="b">
+      <default>true</default>
+    </key>
+    <key name="notifications-show-scrollbar" type="b">
+      <default>true</default>
+    </key>
+    <!-- #endregion Notifications Widget -->
+
+    <!-- #region Media Widget -->
+    <key name="media-enabled" type="b">
+      <default>true</default>
+    </key>
+    <key name="media-compact" type="b">
+      <default>true</default>
+    </key>
+    <key name="media-show-progress" type="b">
+      <default>true</default>
+    </key>
+    <key name="media-remove-shadow" type="b">
+      <default>true</default>
+    </key>
+    <!-- use paged layout type=b -->
+    <!-- #endregion Media Widget -->
+
+    <!-- #region Weather Widget -->
+    <key name="weather-enabled" type="b">
+      <default>false</default>
+    </key>
+    <key name="weather-remove-shadow" type="b">
+      <default>true</default>
+    </key>
+    <key name="weather-compact" type="b">
+      <default>true</default>
+    </key>
+    <!-- #endregion Weather Widget -->
+
+    <!-- #region Date Menu -->
+    <key name="datemenu-hide-left-box" type="b">
+      <default>true</default>
+    </key>
+    <key name="datemenu-hide-right-box" type="b">
+      <default>false</default>
+    </key>
+    <key name="datemenu-remove-notifications" type="b">
+      <default>true</default>
+    </key>
+    <key name="datemenu-remove-media-control" type="b">
+      <default>true</default>
+    </key>
+    <!-- #endregion Date Menu -->
+
+    <!-- #region System Items -->
+    <key name="system-items-layout-enabled" type="b">
+      <default>false</default>
+    </key>
+    <key name="system-items-layout-hide" type="b">
+      <default>false</default>
+    </key>
+    <key name="system-items-layout-hide-screenshot" type="b">
+      <default>false</default>
+    </key>
+    <key name="system-items-layout-hide-settings" type="b">
+      <default>false</default>
+    </key>
+    <key name="system-items-layout-hide-lock" type="b">
+      <default>false</default>
+    </key>
+    <key name="system-items-layout-hide-shutdown" type="b">
+      <default>false</default>
+    </key>
+    <key name="system-items-layout-hide-battery" type="b">
+      <default>false</default>
+    </key>
+    <key name="system-items-layout-order" type="as">
+      <default>['battery', 'laptopSpacer', 'screenshot', 'settings', 'desktopSpacer', 'lock', 'shutdown']</default>
+    </key>
+    <!-- #endregion System Items -->
+
+    <!-- #region Volume Mixer -->
+    <key name="volume-mixer-enabled" type="b">
+      <default>true</default>
+    </key>
+    <key name="volume-mixer-show-scrollbar" type="b">
+      <default>true</default>
+    </key>
+    <key name="volume-mixer-max-height" type="i">
+      <default>0</default>
+    </key>
+    <key name="volume-mixer-ignore" type="aa{sv}">
+      <!-- { 'name': <string>, 'nameRegex': <string> } -->
+      <default><![CDATA[
+        [
+        ]
+      ]]></default>
+    </key>
+
+    <key name="volume-mixer-use-regex" type="b">
+      <default>false</default>
+    </key>
+    <key name="volume-mixer-check-description" type="b">
+      <default>true</default>
+    </key>
+    <key name="volume-mixer-position" type="s">
+      <!-- "bottom" / "top" -->
+      <default>"top"</default>
+    </key>
+    <key name="volume-mixer-filtered-apps" type="as">
+      <default>[]</default>
+    </key>
+    <key name="volume-mixer-show-description" type="b">
+      <default>true</default>
+    </key>
+    <key name="volume-mixer-show-icon" type="b">
+      <default>true</default>
+    </key>
+    <key name="volume-mixer-filter-mode" type="s">
+      <choices>
+        <choice value='block'/>
+        <choice value='allow'/>
+      </choices>
+      <default>'block'</default>
+    </key>
+    <!-- #endregion Volume Mixer -->
+
+    <!-- #region Input Output -->
+    <key name="output-show-selected" type="b">
+      <default>false</default>
+    </key>
+    <key name="input-show-selected" type="b">
+      <default>false</default>
+    </key>
+    <key name="input-always-show" type="b">
+      <default>false</default>
+    </key>
+    <!-- #endregion Input Output -->
+
+    <!-- #region Quick Toggle Layout -->
+    <key name="toggles-layout-enabled" type="b">
+      <default>false</default>
+    </key>
+    <key name="toggles-layout-order" type="aa{sv}">
+      <default><![CDATA[
+        [
+          { 'hide': <false>, 'isSystem': <true>, 'constructorName': <'NMWiredToggle'> },
+          { 'hide': <false>, 'isSystem': <true>, 'constructorName': <'NMWirelessToggle'> },
+          { 'hide': <false>, 'isSystem': <true>, 'constructorName': <'NMModemToggle'> },
+          { 'hide': <false>, 'isSystem': <true>, 'constructorName': <'NMBluetoothToggle'> },
+          { 'hide': <false>, 'isSystem': <true>, 'constructorName': <'NMVpnToggle'> },
+          { 'hide': <false>, 'isSystem': <true>, 'constructorName': <'BluetoothToggle'> },
+          { 'hide': <false>, 'isSystem': <true>, 'constructorName': <'PowerProfilesToggle'> },
+          { 'hide': <false>, 'isSystem': <true>, 'constructorName': <'NightLightToggle'> },
+          { 'hide': <false>, 'isSystem': <true>, 'constructorName': <'DarkModeToggle'> },
+          { 'hide': <false>, 'isSystem': <true>, 'constructorName': <'KeyboardBrightnessToggle'> },
+          { 'hide': <false>, 'isSystem': <true>, 'constructorName': <'RfkillToggle'> },
+          { 'hide': <false>, 'isSystem': <true>, 'constructorName': <'RotationToggle'> },
+          { 'hide': <false>, 'isSystem': <true>, 'constructorName': <'DndQuickToggle'> },
+          { 'hide': <false>, 'isSystem': <true>, 'constructorName': <'UnsafeQuickToggle'> },
+          { 'nonOrdered': <true>, 'hide': <false> }
+        ]
+      ]]></default>
+    </key>
+    <!-- #endregion Quick Toggle Order -->
+
+    <!-- #region Unsafe Mode Quick Toggle -->
+    <key name="unsafe-quick-toggle-enabled" type="b">
+      <default>false</default>
+    </key>
+    <key name="unsafe-quick-toggle-last-state" type="b">
+      <default>false</default>
+    </key>
+    <key name="unsafe-quick-toggle-save-last-state" type="b">
+      <default>true</default>
+    </key>
+    <!-- #endregion Unsafe Mode Quick Toggle -->
+
+    <!-- #region DND Quick Toggle -->
+    <key name="dnd-quick-toggle-enabled" type="b">
+      <default>true</default>
+    </key>
+    <key name="dnd-quick-toggle-indicator-position" type="s">
+      <default>"system-tray"</default>
+      <choices>
+        <choice value='system-tray'/>
+        <choice value='date-menu'/>
+        <choice value='hide'/>
+      </choices>
+    </key>
+    <!-- #endregion DND Quick Toggle -->
+
+    <!-- #region Menu Animation -->
+    <key name="menu-animation-enabled" type="b">
+      <default>false</default>
+    </key>
+    <key name="menu-animation-background-blur-radius" type="i">
+      <default>8</default>
+    </key>
+    <key name="menu-animation-background-opacity" type="i">
+      <default>220</default>
+    </key>
+    <key name="menu-animation-grid-content-opacity" type="i">
+      <default>190</default>
+    </key>
+    <key name="menu-animation-background-scale-x" type="i">
+      <default>920</default>
+    </key>
+    <key name="menu-animation-background-scale-y" type="i">
+      <default>920</default>
+    </key>
+    <key name="menu-animation-open-duration" type="i">
+      <default>380</default>
+    </key>
+    <key name="menu-animation-close-duration" type="i">
+      <default>380</default>
+    </key>
+    <!-- #endregion Menu Animation -->
+
+    <!-- #region Overlay Menu -->
+    <key name="overlay-menu-enabled" type="b">
+      <default>false</default>
+    </key>
+    <key name="overlay-menu-width" type="i">
+      <default>380</default>
+    </key>
+    <key name="overlay-menu-animate-duration" type="i">
+      <default>360</default>
+    </key>
+    <key name="overlay-menu-animate-style" type="s">
+      <choices>
+        <choice value='flyout'/>
+        <choice value='dialog'/>
+      </choices>
+      <default>'dialog'</default>
+    </key>
+    <key name="layout" type="a{sai}">
+      <default>
+        {
+          'weather-widget': [0, 0],
+          'notifications-widget': [0, 0],
+          'media-widget': [0, 0],
+          'mixer-widget': [0, 0]
+        }
+      </default>
+    </key>
+    <!-- #endregion Overlay Menu -->
+  </schema>
+</schemalist>

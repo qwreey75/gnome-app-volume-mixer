@@ -1,0 +1,101 @@
+@use "../global.scss" as *;
+
+#{$p}-notifications {
+    padding: 0px;
+    margin: 0px 0px 0px 0px;
+
+    // Message Card
+    .message {
+        margin: 0px;
+    }
+
+    // Message Content (Texts)
+    .message-content {
+        width: 0px; // Min size, texts will be expended
+        text-overflow: ellipsis;
+    }
+
+    // Scrolling list margin/padding/spacing
+    .message-list-section-list {
+        margin: 0px;
+        padding: 0px;
+        spacing: 8px; // Message spacing
+    }
+
+    // Avoid Scrollbar
+    .message-list-sections {
+        padding: 0px;
+        margin: 0px;
+        &#{$p}-has-scrollbar {
+            padding: 0px 5px 0px 0px;
+        }
+    }
+
+    // Header
+    #{$p}-header {
+        margin-bottom: 6px;
+
+        // Header Label
+        #{$p}-header-label {
+            font-weight: bold;
+            font-size: 0.98em;
+            margin-left: 4px;
+        }
+
+        // Clear button
+        #{$p}-clear-button {
+            font-weight: bold;
+            font-size: 0.98em;
+            padding: 1px 4px;
+            border-radius: 8px;
+            margin-right: 4px;
+            &:hover {
+                background-color: rgba(127, 127, 127, .2);
+            }
+            #{$p}-icon {
+                margin-right: 4px;
+            }
+        }
+    }
+    &#{$p}-use-native-controls #{$p}-header {
+        margin-bottom: 8px;
+    }
+
+    // No notification placeholder
+    #{$p}-placeholder {
+        width: 100%;
+        font-weight: bold;
+        margin: 10px 0px;
+        #{$p}-icon {
+            margin-bottom: 12px;
+        }
+    }
+
+    // Native controls
+    #{$p}-native-controls {
+        margin-top: 5px;
+        padding: 0px 4px;
+        #{$p}-native-dnd-switch {
+            margin: 0px 0px 0px 6px;
+            height: 24px; // 26px;
+            width: 40px;
+            .handle {
+                margin: 2px;
+                width: 20px;
+                height: 20px;
+            }
+        }
+        #{$p}-native-dnd-text {
+            font-size: 0.92em;
+            margin-right: 4px;
+            margin-bottom: 0px;
+        }
+        #{$p}-native-clear-button {
+            font-size: 0.92em;
+            padding: 4px 4px;
+        }
+        #{$p}-native-control-box {
+            padding: 8px 4px 0px 4px;
+        }
+    }
+}
