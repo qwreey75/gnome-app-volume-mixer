@@ -96,7 +96,7 @@
     <key name="media-progress-active-background-color" type="ai">
       <default>[]</default>
     </key>
-    <key name="media-progress-height" type="i">
+    <key name="media-progress-thickness" type="i">
       <default>0</default>
     </key>
     <key name="media-remove-shadow" type="b">
